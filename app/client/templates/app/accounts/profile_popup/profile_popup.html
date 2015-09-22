@@ -1,0 +1,17 @@
+<template name="ProfilePopup">
+  <div class="profile-popup">
+    <img src="{{this.url store='thumbs'}}" alt="Profile Image" class="img-thumbnail" width="100" height="100" />
+    <div class="profile-details">
+      <div class="highlight">
+        <strong>{{currentUser.profile.name}}</strong>
+      </div>
+      {{currentUser.emails.[0].address}}
+      <div class="links">
+        <a href="{{pathFor 'editProfile'}}">Edit Profile</a>
+        <span>
+          <button name="logout" class="btn btn-primary">Sign Out</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</template>

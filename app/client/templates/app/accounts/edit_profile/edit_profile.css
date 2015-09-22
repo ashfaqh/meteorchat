@@ -1,0 +1,26 @@
+/*****************************************************************************/
+/* EditProfile: Style */
+/*****************************************************************************/
+.edit-profile-image input {
+	filter: alpha(opactiy=0);
+	opacity: 0;
+}
+.change-image {
+	background: rgba(78,144,254,.7);
+	bottom: 0;
+	color: #ffffff;
+	font-size: 9px;
+	font-weight: bold;
+	left: 1px;
+	line-height: 9px;
+	position: absolute;
+	padding: 7px 0;
+	text-align: center;
+	width: 98px;
+	margin-left: 15px;
+	border-radius: 0 0 5px 5px;
+}
+.change-image:hover {
+	cursor: pointer;
+	cursor: hand;
+}

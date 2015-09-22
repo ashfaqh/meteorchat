@@ -1,0 +1,13 @@
+<template name="Pad">
+	{{> Userlist}}
+	<div class="session-window"> 
+	{{> SessionUsers}}
+	<div class="black-board">	
+		<icon class="fa fa-remove" id="board-clear" name="board-clear"></icon>		
+		<icon class="fa fa-eraser" id="board-erase" name="board-erase"></icon>
+		<icon class="fa fa-pencil" id="board-color" name="board-color"></icon>
+		<input style="visibility: hidden" id="colorPicker" width="1px">		
+		<canvas id="board-canvas" class="{{cursor}}"></canvas>
+	</div>
+	</div>
+</template>

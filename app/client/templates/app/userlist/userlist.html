@@ -1,0 +1,18 @@
+<template name="Userlist">
+	<div class="user-list" style="height: {{windowHeight}}">
+		{{#each users}}
+			<div class="user-list-profile">
+		  	{{#with this}}
+		  		{{#each profileImage profile.image}}
+		      	<img src="{{this.url store='thumbs'}}" alt="Profile Image" class="img-thumbnail image" width="30" height="30" />
+		      {{/each}}
+		      <span>
+		      	<strong class="name">{{profile.name}}</strong>
+		      	<span class="badge badge-inverse">{{notificationCount _id}}</span>
+		      	<i class="status fa {{statusClass}}"></i>
+		      </span>
+				{{/with}}
+			</div>
+		{{/each}}
+	</div>
+</template>

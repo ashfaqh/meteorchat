@@ -1,0 +1,22 @@
+<template name="Chatlog">
+	{{#each chatMessage}}
+		<div class="row chat-message">
+			<div class="col-md-12">
+				<span class="chat-image {{imagePosition this.sender}}">
+					{{#with user this.sender}}
+		  			{{#each profileImage profile.image}}
+		      		<img src="{{this.url store='thumbs'}}" alt="Profile Image" class="img-thumbnail image" width="30" height="30" />
+		      	{{/each}}
+		      {{/with}}
+		    </span>
+		    <span class="chat-text {{textCallout this.sender}} {{messagePosition this.sender}}">
+					<span>{{this.message}} {{new_message}}</span>
+					<div class="message-sender">
+						<!--<span class="col-md-6">{{sendername this.sender}}</span>-->
+						<span class="pull-right">{{senttime this.date}}</span>
+					</div>
+				</span>
+			</div>
+		</div>
+	{{/each}}
+</template>

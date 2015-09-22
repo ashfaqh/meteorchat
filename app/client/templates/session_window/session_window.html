@@ -1,0 +1,19 @@
+<template name="SessionWindow">
+	{{> Userlist}}
+	<div class="session-window">
+		{{> SessionUsers}}
+		<div id="chatbox" class="fluid-container chat-messages">		
+	  	{{> Chatlog}}
+	  	<div class="message-box">
+			  <form id="message-form" name="message-form">
+		      <div class="controls input-symbol">	  
+			  		<input name="message" type="text">
+			  		<button class="btn btn-small message-submit" name="submitmsg" type="submit">
+			  			<i class="fa fa-paper-plane"></i>
+			  		</button>
+			  	</div>
+			  </form>
+		  </div>
+		</div>
+	</div>
+</template>

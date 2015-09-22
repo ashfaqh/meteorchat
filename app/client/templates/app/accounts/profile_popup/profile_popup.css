@@ -1,0 +1,33 @@
+/*****************************************************************************/
+/* ProfilePopup: Style */
+/*****************************************************************************/
+.profile-popup {
+	margin: 10px;
+	background-color: #666666;
+	color: #FFFFFF;
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	left: -250px;
+	z-index: 10;
+}
+.profile-popup img {
+	float: left;
+	height: 100px;
+	width: auto;
+	max-width: 120px;
+	border-radius: 0;
+}
+.profile-popup .profile-details {
+	float: right;
+}
+.profile-popup .highlight {
+	font-size: 1.2em;
+	font-weight: 200;
+}
+.profile-popup .links {
+	padding: 5px;
+}
+.profile-popup .links button {
+	margin-left: 15px;
+}

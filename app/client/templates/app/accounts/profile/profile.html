@@ -1,0 +1,12 @@
+<template name="Profile">
+  <div class="profile">
+  {{#each profileImage}}
+    <a href="#" name="profileImage">
+      <img src="{{this.url store='thumbs'}}" alt="Profile Image" class="img-thumbnail" width="50" height="50" />
+    </a>
+    {{#if profileview}}
+      {{> ProfilePopup}}
+    {{/if}}
+  {{/each}}
+  </div>
+</template>

@@ -1,0 +1,184 @@
+/*****************************************************************************/
+/* main: Style */
+/*****************************************************************************/
+.main {
+}
+.navbar {
+	border-radius: 0;
+}
+.input-symbol {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.input-symbol span {
+	position: absolute;
+	top: 25%;
+	left: 3%;
+	display: inline;
+	color: #666666;
+}
+.login-form {
+	background-color: #666666;
+	padding: 5px 20px 20px 20px;
+	color: #ffffff;
+}
+.login-form h2 {
+	text-align: center;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+.login-form h2 i {
+	padding-right: 20px;
+}
+.login-form .submit {
+	padding-top: 15px;
+}
+.login-form input {
+	padding-left: 2em;
+}
+.col-center {
+	float: none;
+	margin: 0 auto;
+}
+.status-warning {
+	color: yellow;
+}
+.status-error {
+	color: red;
+}
+.status-success {
+	color: green;
+}
+.status-default {
+	color: grey;
+}
+.user-list {
+	width: 25%;
+	float: left;
+}
+.user-list .image {
+	margin-right: 15px;
+}
+.user-list .name {
+	width: 300px;
+}
+.user-list .status {
+	margin: 10px;
+	float: right;
+}
+.user-list-profile {
+	padding: 10px;
+}
+/*.user-list-profile:nth-child(even) {
+	background-color: rgba(224, 224, 235, 0.5);
+} */
+.user-list-profile:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+/* Back board */
+/* .black-board {
+	background-color: #ECECEC;
+	overflow: hidden;
+} */
+.black-board icon,
+.black-board input {
+	position: relative;
+	float: right;
+	color: #000000;
+	margin: 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+.draw-cursor {
+	cursor: url(/images/oth697.cur), progress !important;
+}
+.erase-cursor {
+	cursor: url(/images/eraser.ico) 50 50, default;
+}
+.session-window {
+	width: 75%;
+	max-width: 800px;
+	float: right;
+}
+#chatbox, .black-board, .black-board canvas {
+	height: 500px;
+	background-color: #ECECEC;
+	box-shadow: inset 0 0 10px #000000;
+	overflow: hidden;	
+}
+#chatbox {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-left: 10px;
+}
+.session-window form input[name='message'] {
+	width: 75%;
+	height: 35px;
+	box-shadow: 2px 2px 1px #FFFFFE;
+}
+.session-window form input[name='submitmsg'] {
+	width: 10%;
+	border-radius: 10px;
+}
+.session-window #username {
+	background-color: #000000;
+	color: #ffffff;
+	width: 100%;
+	padding: 5px 20px;
+}
+.session-window span[name='sessiontype'] {
+	cursor: pointer;
+	cursor: hand;
+}
+.chat-message {
+	margin: 0 1px;
+	position: relative;
+}
+.chat-image {
+	margin-top: 15px;
+}
+.callout {
+	background-color: #fff;
+	background-image: -moz-linear-gradient(top, #fff, #fff);
+	position: relative;
+	color: #000000;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 10px 15px;
+	min-height: 50px;
+}
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+.callout.left::before {
+	right: -20px;
+	top: 15%;
+	border-left: 10px solid #ffffff;
+}
+.callout.right::before {
+	left: -20px;
+	top: 15%;
+	border-right: 10px solid #ffffff;
+}
+.message-box {
+	padding: 0 10px;
+	padding-bottom: 20px;	
+}
+.message-submit {
+	margin: 0 5px;
+	background-color: #ffffff;
+	color: green;
+}
+.message-sender {
+	font-size: 10px;
+	color: rgba(209, 209, 209, 0.8);
+}
